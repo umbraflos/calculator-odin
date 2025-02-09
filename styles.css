@@ -1,0 +1,77 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.page-header{
+    height: 10%;
+}
+
+.page-main {
+    display: flex;
+    height: 80%;
+    align-content: center;
+    justify-content: center;
+}
+
+.cal-box{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border: 5px solid black;
+    border-radius: 10px;
+    gap: 8px;
+}
+
+.cal-display, .cal-keypad{
+    border: 2px solid black;
+    border-radius: 8px;
+    box-sizing: border-box;
+    width: auto;
+    padding: 10px;
+}
+
+.cal-display{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.display-expr, .display-result{
+    display: flex;
+    box-sizing: border-box;
+    font-size: larger;
+    height: 1em;
+    justify-content: flex-end;
+    overflow:auto;
+}
+
+.cal-keypad{
+    height: 75%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0,1fr));
+    gap: 10px;
+}
+
+.cal-keypad div{
+    height: auto;
+    background-color: #bababa;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-footer{
+    height: 10%;
+}
